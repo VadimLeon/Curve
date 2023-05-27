@@ -27,4 +27,4 @@ $(OBJECTS): $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 
 
 cleanlib:
-	rm -rf $(TARGET)
+	rm -rf $(TARGET) $(OBJECTS)
