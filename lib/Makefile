@@ -1,7 +1,8 @@
 SHELL = /bin/sh
 
 CXX = g++
-CXXFLAGS := -std=c++17 -shared -fPIC -I../include -pedantic-errors -Wall -Wextra -Werror -Wshadow -m64
+CXXFLAGS := -std=c++17 -c -fPIC -I../include -pedantic-errors -Wall -Wextra -Werror -Wshadow -m64
+LFLAG = -shared
 
 TARGET = curve3D.dylib
 SRCDIR = ../src
@@ -14,11 +15,11 @@ SOURCES = $(wildcard $(SRCDIR)/*.cpp)
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
 
 
-all: mklib $(TARGET)
+all: $(TARGET)
 
 $(TARGET): $(OBJECTS)
 	@echo "Linking objects files..."
-	$(CXX) $(CXXFLAGS) -o $@ $^
+	$(CXX) $(LFLAG) -o $@ $^
 
 $(OBJECTS): $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
 	@echo "Compiling..."
