@@ -7,7 +7,7 @@
 SHELL = /bin/sh
 
 # Program for compiling C++ programs; default ‘g++’.
-CXX = g++
+CXX = g++-13
 
 # Extra flags to give to the C++ compiler.
 # -std: standard
@@ -19,7 +19,7 @@ CXX = g++
 #           parameter or global variable or a built-in function is shadowed.
 # -fopenmp: Enable OpenMP support.
 # -m64: Generate code for a 64-bit environment.
-CXXFLAGS := -std=c++17 -Iinclude -pedantic-errors -Wall -Wextra -Werror -Wshadow -m64
+CXXFLAGS := -std=c++17 -Iinclude -fopenmp -pedantic-errors -Wall -Wextra -Werror -Wshadow -m64
 
 # Extra flags to give to compilers when they are supposed to invoke the linker,
 # ‘ld’, such as -L. Libraries (-lfoo) should be added to the LDLIBS variable
@@ -29,7 +29,7 @@ LDFLAGS = -Llib
 # Library flags or names given to compilers when they are supposed to invoke
 # the linker, ‘ld’. Non-library linker flags, such as -L, should go in the
 # LDFLAGS variable.
-LDLIBS := -lcurve3D#-lstdc++ -lm
+LDLIBS := #-lcurve3D#-lstdc++ -lm
 
 # Create directory if it doesn't exist.
 MKDIR_P = mkdir -p
