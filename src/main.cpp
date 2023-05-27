@@ -62,6 +62,7 @@ int main() {
 
     // Step 6: Compute the total sum of radii in the second container
     double sumOfRadii = 0.0;
+    #pragma omp parallel for reduction(+:sumOfRadii)
     for (const auto& circle : circleContainer) {
         sumOfRadii += circle->getRadius();
     }
