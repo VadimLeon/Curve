@@ -15,10 +15,7 @@
 int main() {
     // Step 2: Populate container with random curves
     std::vector<std::shared_ptr<Curve3D>> curves;
-    // curves.push_back(std::make_shared<Circle>(2.0));
-    // curves.push_back(std::make_shared<Ellipse>(3.0, 2.0));
-    // curves.push_back(std::make_shared<Helix>(1.0, 0.5));
-    for (int i = 0; i < 1000; i++) {
+    for (int i = 0; i < 10000; i++) {
         double random1 = (double)rand() / RAND_MAX;
         double random2 = (double)rand() / RAND_MAX;
         double random3 = (double)rand() / RAND_MAX;
