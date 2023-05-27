@@ -29,7 +29,7 @@ LDFLAGS = -Llib
 # Library flags or names given to compilers when they are supposed to invoke
 # the linker, ‘ld’. Non-library linker flags, such as -L, should go in the
 # LDFLAGS variable.
-LDLIBS := #-lstdc++ -lm
+LDLIBS := -lcurve3D#-lstdc++ -lm
 
 # Create directory if it doesn't exist.
 MKDIR_P = mkdir -p
