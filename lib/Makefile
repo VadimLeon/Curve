@@ -4,7 +4,7 @@ CXX = g++
 CXXFLAGS := -std=c++17 -c -fPIC -I../include -pedantic-errors -Wall -Wextra -Werror -Wshadow -m64
 LFLAG = -shared
 
-TARGET = curve3D.dylib
+TARGET = libcurve3D.dylib
 SRCDIR = ../src
 OBJDIR = ../obj
 
