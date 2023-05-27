@@ -6,7 +6,7 @@
 #define PI  3.14159265358979323846
 
 //! Constructor for the Helix class
-Helix::Helix(double radius, double step) : radius(radius), step(step) {}
+Helix::Helix(double rad, double dstep) : radius(rad), step(dstep) {}
 
 //! Calculates the 3D point on the helix at parameter t
 std::vector<double> Helix::getPoint(double t) const {

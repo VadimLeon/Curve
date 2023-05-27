@@ -5,7 +5,7 @@
 
 
 //! Constructor for the Ellipse class
-Ellipse::Ellipse(double radiusX, double radiusY) : radiusX(radiusX), radiusY(radiusY) {}
+Ellipse::Ellipse(double radX, double radY) : radiusX(radX), radiusY(radY) {}
 
 //! Calculates the 3D point on the ellipse at parameter t
 std::vector<double> Ellipse::getPoint(double t) const {

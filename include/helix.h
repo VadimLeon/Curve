@@ -8,7 +8,7 @@
 class Helix : public Curve3D {
 public:
     //! Constructor for the Helix class
-    Helix(double radius, double step);
+    Helix(double rad, double dstep);
 
     //! Calculates the 3D point on the helix at parameter t
     std::vector<double> getPoint(double t) const override;

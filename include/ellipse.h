@@ -8,7 +8,7 @@
 class Ellipse : public Curve3D {
 public:
     //! Constructor for the Ellipse class
-    Ellipse(double radiusX, double radiusY);
+    Ellipse(double radX, double radY);
 
     //! Calculates the 3D point on the ellipse at parameter t
     std::vector<double> getPoint(double t) const override;

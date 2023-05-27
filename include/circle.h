@@ -7,7 +7,7 @@
 class Circle : public Curve3D {
 public:
     //! Constructor for the Circle class
-    Circle(double radius);
+    Circle(double rad);
 
     //! Calculates the 3D point on the circle at parameter t
     std::vector<double> getPoint(double t) const override;

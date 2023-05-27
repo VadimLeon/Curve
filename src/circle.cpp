@@ -4,7 +4,7 @@
 #include "circle.h"
 
 //! Constructor for the Circle class
-Circle::Circle(double radius) : radius(radius) {}
+Circle::Circle(double rad) : radius(rad) {}
 
 //! Calculates the 3D point on the circle at parameter t
 std::vector<double> Circle::getPoint(double t) const {
